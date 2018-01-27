@@ -1,5 +1,4 @@
 #Reversi
-#By Patrick
 
 import random
 import AI
