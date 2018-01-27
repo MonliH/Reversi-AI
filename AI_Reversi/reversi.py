@@ -1,6 +1,4 @@
 #Reversi
-#By Patrick
-__author__ = "Patrick & Jonathan"
 
 n = 8 # board size 8,6,4,2(needs to be even)
 white = "☺" # white tile ascii
