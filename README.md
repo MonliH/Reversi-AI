@@ -8,3 +8,5 @@ To play againt the AI, run [reversi_play.py](https://github.com/MonliH/Reversi-A
 ## Dependencies
 * Python 3
 * [NumPy](https://pypi.python.org/pypi/numpy/1.14.0)
+
+**Credits Patrick Luk**
