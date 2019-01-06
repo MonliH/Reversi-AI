@@ -9,4 +9,4 @@ To play againt the AI, run [reversi_play.py](https://github.com/MonliH/Reversi-A
 * Python 3
 * [NumPy](https://pypi.python.org/pypi/numpy/) `pip install numpy`
 
-[**Credits Patrick Luk**](https://github.com/lukpwh330)
+[Thanks](https://github.com/lukpwh330)
