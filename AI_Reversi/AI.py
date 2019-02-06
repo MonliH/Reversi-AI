@@ -11,13 +11,16 @@ bestNetworksPopulation = 5
 previousGeneration = 1271
 mutationAmount = 0.05
 
+
 # sigmoid function
 def sigmoid(x):
-  return 1 / (1 + math.exp(-x))
+    return 1 / (1 + math.exp(-x))
+
 
 # negative function
 def negative(x):
-  return -x
+    return -x
+
 
 # evaluate the neural network
 def evaluate(board, structure, weights, turn):
@@ -32,6 +35,7 @@ def evaluate(board, structure, weights, turn):
         layer = sigmoidForArray(layer) # apply sigmoid function
     return layer
 
+
 # choose the best move
 def chooseMove(board, sturcture, weights, turn):
     results = evaluate(board, structure, weights, turn) # results of the nerual network
@@ -45,6 +49,7 @@ def chooseMove(board, sturcture, weights, turn):
             bestMove = coordinates
     return bestMove
 
+
 # generate random neural network
 def generateNetwork(structure):    
     weights = []
@@ -52,7 +57,8 @@ def generateNetwork(structure):
         weights.append(np.array([[random.uniform(-1, 1) for _ in range(structure[i] + 1)] for _ in range(structure[i + 1])]))
     return weights
 
- # function for loading neural networks
+
+# function for loading neural networks
 def loadNetworks(structure, previousGeneration):
     with open("gen" + str(previousGeneration), "r") as file:
         lines = file.read().splitlines()
@@ -77,6 +83,7 @@ def loadNetworks(structure, previousGeneration):
             networks.append(weights)
 
         return networks      
+
 
 # function for saving neural networks
 def saveNetworks(networks, sortedNetworksTuples, previousGeneration):
